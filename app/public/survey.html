@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Friend Finder Survey</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+      <script type="text/javascript" src="survey.js"></script>
+   </head>
+   <body>
+      <section class="hero is-info  is-bold">
+         <div class="hero-body" style="background-color:pink">
+            <div class="container">
+               <h1 class="title">
+                  Complete The Survey Below
+               </h1>
+               <h2 class="subtitle">
+                  To Find Your Closest Friend!
+               </h2>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container" style="background-color:#FAEBD7">
+            <div class="notification" style="background-color:#FAEBD7">
+
+               <div class="field">
+                  <label class="label is-lmedium">Name (Required)</label>
+                  <div class="control">
+                     <input class="input is-medium" id="name" name="name" type="text" placeholder="Type Your Name">
+                  </div>
+               </div>
+               <div class="field">
+                  <label class="label is-lmedium">Photo URL (Required)</label>
+                  <div class="control">
+                     <input class="input is-medium" id="photo-url" name="photo_url" type="text" placeholder="http://">
+                  </div>
+               </div>
+
+               <!--QUESTION 1-->
+               <div class="field">
+                  <label class="label">What age of partner/friend fits you best?</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question1" name="question1">
+                           <option value="1">21-25</option>
+                           <option value="2">26-32</option>
+                           <option value="3">33-37</option>
+                           <option value="4">38-45</option>
+                           <option value="5">45+</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 2-->
+               <div class="field">
+                  <label class="label">What's the first thing you notice on date?</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question2" name="question2">
+                           <option value="1">Outfit</option>
+                           <option value="2">Figure</option>
+                           <option value="3">Courtsy</option>
+                           <option value="4">Looks</option>
+                           <option value="5">Dialogue</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 3-->
+               <div class="field">
+                  <label class="label">Are you adventourous?</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question3" name="question3">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 4-->
+               <div class="field">
+                  <label class="label">Do you like Cats?</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question4" name="question4">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 5-->
+               <div class="field">
+                  <label class="label">Question 5</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question5" name="question5">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 6-->
+               <div class="field">
+                  <label class="label">question 6</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question6" name="question6">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 7-->
+               <div class="field">
+                  <label class="label">Question 7</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question7" name="question7">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 8-->
+               <div class="field">
+                  <label class="label">Question 8</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question8" name="question8">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 9-->
+               <div class="field">
+                  <label class="label">Question 9</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question9" name="question9">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <!--QUESTION 10-->
+               <div class="field">
+                  <label class="label">Question 10</label>
+                  <div class="control is-expanded">
+                     <div class="select is-fullwidth">
+                        <select id="question10" name="question10">
+                           <option value="1">Strongly Agree</option>
+                           <option value="2">Agree</option>
+                           <option value="3">Neutral</option>
+                           <option value="4">Disagree</option>
+                           <option value="5">Strongly Disagree</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+               <div class="field is-grouped">
+                  <div class="control">
+                     <button id="submit" style="background-color:powderblue">Submit</button>
+                  </div>
+                  <div class="control">
+                     <form name="cancel_survey" action="/" method="get">
+                        <button type="submit" style="background-color:red">Cancel</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div id="best-match" class="modal">
+         <div class="modal-background"></div>
+         <div class="modal-content">
+            <article class="message is-large">
+               <div class="message-header">
+                  <p>Best Match</p>
+               </div>
+               <div class="message-body">
+                  <form name="return-home" action="home.html" method="get">
+                     <button type="submit" class="button is-success">Back</button>
+                  </form>
+               </div>
+            </article>
+         </div>
+      </div>
+   </body>
+</html>
